@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 5px solid goldenrod;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  .quote-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+.controls{
+    display: flex;
+    flex-direction: row;
+} 
+.colors{
+    margin-left: 2em;
+    border:5px  solid goldenrod; 
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+} 
+.colors button{
+    height: 20px;
+    width: 20px;
+    
+}
+#redBtn {
+        background-color: red;
+}
+#blueBtn{
+    background-color: blue;
+}
+#greenBtn{
+    background-color: green;
+}
+#yellowBtn{
+    background-color: yellow ;
+}
+#purpleBtn{
+    background-color: purple;
+}
+.qoute-author{
+    float: right;
+}
+#author{
+    border:5px  solid goldenrod; 
+}
+
+#generate{
+    border:5px  solid goldenrod; 
+}
+
+#download{
+    border:5px  solid goldenrod;
+}
+
+p.content
+{
+    
+    border:5px  solid goldenrod;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: top;
+}
+
+
+/*  canvas.content{
+
+    margin-left: 25px;
+    margin-top: 25px;
+    border: 5px solid goldenrod;
+    margin-bottom: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 50px;
+    
+ } */

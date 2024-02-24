@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+    <head>
+        <title> My Projects</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+           
+    </head>
+
+
+    <body>
+        `
+        <div class="p-3 mb-2 bg-info text-dark">
+        <div class="jumbotron text-center">
+            
+            <h1>Welcome to My Page</h1>
+            <p>Here are all my projects...!!</p> 
+          </div>
+
+        </div>  
+
+
+        <div class="container">   
+            
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>To-Do-List </h3>
+                <p>Here is the example of To-do-list and its script demo. </p>
+                <p>  Click here to open to project.</p>
+                <input type="button" name="To-Do-List" value="To-Do-List" id="list" class="btn-primary" style="border-radius: 4px;">
+              </div>
+
+
+              <div class="col-sm-4" >
+                
+                <h3>Digital clock </h3>
+                <p>Here is the example of Digital clock and its script demo</p>
+                <p> Click here to open to project.</p>
+                <input type="button" name="Digital clock" value="Digital clock"  id="clock" class="btn-primary" style="border-radius: 4px;">
+               
+              </div>
+
+              <div class="col-sm-4">
+                <h3> Api Fetch </h3>        
+                <p>Here is the example of an API- Fetch  and its script demo</p>
+                <p> Click here to open to project.</p>
+                <input type="button" name="API-Fetch" value="API-Fetch" id="Api" class="btn-primary" style="border-radius: 4px;">
+              </div>
+             
+             </div>
+          </div>
+
+        <script>
+            // Link to all projects 
+        var list = document.getElementById("list");
+        
+        list.addEventListener('click',() => {
+            window.open('To-do-List1 .html','_blank');
+        })
+
+        var clock = document.getElementById("clock");
+        
+        clock.addEventListener('click',() => {
+            window.open('digital clock.html','blank');
+        })
+
+
+        var Api = document.getElementById("Api");
+        
+        Api.addEventListener('click',() => {
+            window.open('api fetch/index.html','blank');
+        })
+
+
+        // changing button color when visited
+
+        var button1 = document.getElementById("list");
+
+        button1.addEventListener('click',function onClick() {
+            button1.style.backgroundColor= "purple";
+        })
+
+        var button2 = document.getElementById("clock");
+
+        button2.addEventListener('click',function onClick() {
+            button2.style.backgroundColor= "purple";
+        })
+
+        var button3 = document.getElementById("Api");
+
+        button3.addEventListener('click',function onClick() {
+            button3.style.backgroundColor= "purple";
+        })
+
+
+        </script>
+    </body>
+</html>

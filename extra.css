@@ -1,0 +1,26 @@
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+/* Basic color */
+body {
+    background-color: lightblue;
+    color: darkgreen;
+}
+
+
+/* Basic link styles */
+a:link {
+    color: blue;
+    text-decoration: none; /* Removes underline by default */
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline; /* Underline on hover */
+}

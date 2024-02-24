@@ -1,0 +1,80 @@
+<html> 
+    <head> 
+        <title> Calculator Project</title>
+        <style>
+         .title{
+            font-weight:bolder;
+            margin-bottom: 10px;
+            width: 210px;
+            text-align: center;
+            color: blue ; 
+            border: solid black 2px;
+         }
+
+         input[type="button"]{
+            border:white 20%;
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+
+         }
+        input[type="text"]{
+            background-color: white;
+            border: black 20%;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="title" > My Calculator</div> 
+        <table  border="0">
+            <tr>
+                <td colspan="3"><input type="text" id="result"> </td>
+                <td><input type="button" value="AC" onclick="clr()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="display('1')" ></td>
+                <td><input type="button" value="2" onclick="display('2')" ></td>
+                <td><input type="button" value="3" onclick="display('3')" ></td>
+                <td><input type="button" value="/" onclick="display('/')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="display('4')" ></td>
+                <td><input type="button" value="5" onclick="display('5')" ></td>
+                <td><input type="button" value="6" onclick="display('6')" ></td>
+                <td><input type="button" value="-" onclick="display('-')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="display('7')" ></td>
+                <td><input type="button" value="8" onclick="display('8')" ></td>
+                <td><input type="button" value="9" onclick="display('9')" ></td>
+                <td><input type="button" value="+" onclick="display('+')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="display('.')" ></td>
+                <td><input type="button" value="0" onclick="display('0')" ></td>
+                <td><input type="button" value="=" onclick="equate()" ></td>
+                <td><input type="button" value="*" onclick="display('*')" ></td>
+            </tr>
+        </table>
+
+        <script type="text/Javascript">
+            function clr() {
+                document.getElementById("result").value = ""; 
+                
+            }
+            function display(val) {
+                document.getElementById("result").value+=val; // val=val + val
+                
+            }
+            function equate() {
+                let x = document.getElementById("result").value;
+                let y = eval(x);
+                document.getElementById("result").value = y;
+            }
+
+        </script>
+
+    </body>
+
+</html>

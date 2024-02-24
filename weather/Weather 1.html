@@ -1,0 +1,46 @@
+<html>
+    <head>
+           <title>   Weather  </title>
+           <link href="style.css" rel="stylesheet" type="text/css">
+          
+
+    </head>
+    <body>
+        
+        <div class="container">
+            
+           
+            <nav>
+                <div class="logo"><h1 class="top"> Weather - Forecast </h1>  </div>
+                    
+                <ul >
+                    <li> <a href="#">Home </a></li>
+                    <li> <a href="#">About </a></li>
+                    <li> <a href="#">Services </a></li>
+
+                </ul>
+               
+            </nav>
+            <div class="symbol">
+                <img src="Images/cloudy.png"  style="width: 60px;">
+            </div>
+        <div class="background-image">
+             <img src="images/5.jpg" >
+        </div>
+
+        <form>
+            <div class="input-group">
+                <input type ="text" placeholder= "Enter city" id="input" style="height: 3vw; width: 30vw;"  >
+            </div>
+            <div class ="form-group">
+                <input type="button" value="Search" style="width: 10vh; height: 3vw;" onclick="searchByCity()">
+            </div>
+        </form>
+
+        </div>
+
+        <script type="text/javascript" src="weather.js">
+         
+        </script>
+    </body>
+</html>

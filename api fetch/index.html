@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"> </script>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="quote-container">
+            <div class="controls">
+                <select name="author" id="author"></select>
+                <div class="colors">
+                    <button id="redBtn"></button>
+                    <button id="blueBtn"></button>
+                    <button id="greenBtn"></button>
+                    <button id="yellowBtn"></button>
+                    <button id="purpleBtn"></button>
+                </div>
+            </div>
+
+
+            <p class="quote content" id="content">This is a sample quote.
+            </p>
+            
+            <button id="generate">Generate New Quote</button>
+            <button id="download">Download as Image</button>
+
+        </div>
+    </main>
+   
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

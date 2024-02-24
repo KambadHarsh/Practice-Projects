@@ -1,0 +1,120 @@
+<html>
+    <Head>
+        <title>
+             Daily list
+        </title>
+        <style>
+            .container{
+                font-family:Times new Roman;
+            }
+             
+            .row{
+                background-color: rgba(168, 73, 73, 0.453);
+            }
+
+            h1{
+                 text-align: center; 
+                 font-size: 75px; 
+            }
+
+            h2{
+               font-style: italic;
+               margin-bottom: 0;
+                margin-left: 250px;
+          
+            }
+           
+            #item{
+                font-style: italic;
+                font-family: 'Times New Roman';
+                width: 500px;
+                border-color: black ;
+                margin-left: 250px;
+                /* margin-right: 250px; */
+               
+            }
+
+            ::placeholder{
+                text-align: center;
+            }
+            
+            #button{
+                font-family: times new roman;
+                display: inline-grid;
+                align-content: center;
+                border-block-width: 2px;
+                padding: 2px;
+                margin-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                cursor: pointer;
+
+            }
+           
+            #button:hover{
+                background: #adacac;
+            }
+             
+            #myUL{
+                align-items: center;
+            }
+        </style>
+    </Head>
+
+    <body>
+
+        <div class="container">
+       <div class="row">
+       <h1> To-Do-List </h1>
+       
+       <h2>
+          Daily  list.
+       </h2>
+ 
+       <form action="" id = "form">
+        <input type="text" placeholder="Add To-Do-List" id="item"> 
+
+        <input type="button" value ="ADD" onclick="add_Element()" id="button">
+
+       </form>
+       </div>
+
+       <ul id="myUL">
+        
+      </ul>
+
+
+    </div>
+      <script>
+ 
+     function add_Element(){
+        var item = document.getElementById("item");      // storing the value in list variable 
+        // console.log(list.value);
+        var list_item= document.getElementById("myUL");      //for displaying the item 
+
+        if(item.value!=""){                                      // checking if the list is not empty
+         var li = document.createElement("li");                   // creating a list element
+         li.appendChild(document.createTextNode(item.value));        // adding list items
+        //  console.log(li.value)           
+        list_item.appendChild(li);                                   // displaying the items in list
+        
+        
+        item.value=""
+
+        li.onclick = function(){                              // for removing a list item by clicking
+           this.parentNode.removeChild(this);
+
+           
+        }
+
+        }
+        else{
+            alert("Enter some value.")
+        }
+
+
+
+     }
+     </script>
+    </body>
+</html>
